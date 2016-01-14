@@ -3,7 +3,13 @@ var extnames = ['.scss', '.sass'];
 var rename = require('./lib/rename');
 var render = require('./lib/render');
 
-exports.type = type;
-exports.extnames = extnames;
-exports.rename = rename;
-exports.render = render;
+function create(opts) {
+  return {
+    type: type,
+    extnames: extnames,
+    rename: rename,
+    render: render
+  };
+}
+
+exports.create = create;
