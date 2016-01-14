@@ -1,4 +1,7 @@
 {
   "name": "blogware-plugin-sass",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "node-sass": "^3.4.2"
+  }
 }
